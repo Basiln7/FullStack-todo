@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo Dashboard</title>
+  <script src="/static/script.js" defer></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body><div class="dashboard-container">
+
+  <h2>Welcome to Your Todo Dashboard</h2>
+
+  <!-- Add Task Form -->
+  <input type="text" id="task-name" placeholder="Task Name">
+  <input type="text" id="task-desc" placeholder="Task Description">
+  <button onclick="addTask()">Add Task</button>
+
+  <hr>
+
+  <!-- Task List -->
+  <h3>Your Tasks</h3>
+  <ul id="task-list"></ul>
+
+  <button onclick="logout()">Logout</button>
+</div>
+</body>
+</html>
