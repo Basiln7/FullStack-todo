@@ -6,7 +6,6 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 # to run at vercel(host )
 from mangum import Mangum
-handler = Mangum(app)
 
 # importing my own module
 from models import User, CreateUser, Task, CreateTask
@@ -18,6 +17,9 @@ from security import hash_password, verify_password
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# to run vercal
+handler = Mangum(app)
 
 # create database tables
 Base.metadata.create_all(bind=engine)
