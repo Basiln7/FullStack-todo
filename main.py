@@ -4,6 +4,9 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
+# to run at vercel(host )
+from mangum import Mangum
+handler = Mangum(app)
 
 # importing my own module
 from models import User, CreateUser, Task, CreateTask
