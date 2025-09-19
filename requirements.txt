@@ -1,6 +1,7 @@
 
 fastapi
 uvicorn[standard]
+mangum
 sqlalchemy
 pysqlite3-binary ; sys_platform == "win32"
 psycopg2-binary
