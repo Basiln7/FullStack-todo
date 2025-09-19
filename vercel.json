@@ -1,5 +1,5 @@
 {
-  "builds": [
+  "functions": [
     {
          "src":"/main.py",
         "use":"@vercel/python"
