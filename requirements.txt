@@ -10,3 +10,4 @@ passlib[bcrypt]
 python-jose[cryptography]
 jinja2
 starlette
+python-multipart  
